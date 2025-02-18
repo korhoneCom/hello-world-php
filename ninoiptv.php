@@ -12,7 +12,7 @@ for($i=1;$i<count($nino);$i++)
     for($u=1;$u<count($urls);$u++)
       {
         $plainUrls = explode("\n",$urls[$u]);
-        print($plainUrls[0]);
+        print("http"+$plainUrls[0]+"<br>");
       }
   }
 ?>
