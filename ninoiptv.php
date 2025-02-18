@@ -13,7 +13,7 @@ for($i=1;$i<count($nino);$i++)
       {
         $plainUrls = explode("<br>",$urls[$u]);
         $plainUrls = explode("\"",$plainUrls[0]);
-        print("http:{$plainUrls[0]}<br>");
+        print("<a href='m3u-parse.php?url=http:{$plainUrls[0]}'>http:{$plainUrls[0]}</a><br>");
       }
   }
 ?>
