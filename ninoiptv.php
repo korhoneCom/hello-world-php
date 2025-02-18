@@ -9,5 +9,11 @@ for($i=1;$i<count($nino);$i++)
     $ninoPage = file_get_contents($pageUrl);
     $page = explode("post-body",$ninoPage);
     print($page[48]);
+    $urls = explode("http",$page[48]);
+    for($u=1;$u<count($urls);$u++)
+      {
+        $plainUrls = explode("\n",$urls[$u]);
+        print($plainUrls[0]);
+      }
   }
 ?>
