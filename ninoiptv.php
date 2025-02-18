@@ -11,7 +11,7 @@ for($i=1;$i<count($nino);$i++)
     $urls = explode("http",$page[48]);
     for($u=1;$u<count($urls);$u++)
       {
-        $plainUrls = explode(PHP_EOL,$urls[$u]);
+        $plainUrls = explode("<br>",$urls[$u]);
         $plainUrls = explode("\"",$plainUrls[0]);
         print("http{$plainUrls[0]}<br>");
       }
